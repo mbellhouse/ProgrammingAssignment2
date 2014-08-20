@@ -1,6 +1,4 @@
 ## makeCacheMatrix creates a list of methods: getting original data, caching answer and returning answer to console
-## cacheSolve determines whether the matrix inversion calculation already exists, retrieves it if so, 
-## or calculates caches and returns the matrix inversion if it does not alreday exist.
 
 makeCacheMatrix <- function(x = matrix()) {
   
@@ -22,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
   
 }
 
-## Write a short comment describing this function
+## ## cacheSolve determines whether the matrix inversion calculation already exists, retrieves it if so, 
+## or calculates caches and returns the matrix inversion if it does not alreday exist.
 
 cacheSolve <- function(output_makeCacheMatrix=list, ...) { #this function takes a list (generated from makeCacheMatrix) as input 
   answer <- output_makeCacheMatrix$return_answer()         # accesses 'return_answer' from that list and stores the value returned in the answer object
@@ -40,7 +39,7 @@ cacheSolve <- function(output_makeCacheMatrix=list, ...) { #this function takes 
 }
 
 # example runs
-output_makeCacheMatrix<- makeCacheMatrix(matrix(c(1,2,3,4), 2, 2))     
-cacheSolve(output_makeCacheMatrix) 
+# output_makeCacheMatrix<- makeCacheMatrix(matrix(c(1,2,3,4), 2, 2))     
+# cacheSolve(output_makeCacheMatrix) 
 
 
